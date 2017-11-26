@@ -7,8 +7,7 @@ MAINTAINER YongDe Pan <panyongde@gmail.com>
 # Set Timezone
 #####################################
 
-ARG TZ=CST
-ENV TZ ${TZ}
+ENV TZ Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN chown -R mysql:root /var/lib/mysql/
