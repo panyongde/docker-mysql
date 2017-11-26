@@ -1,5 +1,4 @@
-ARG MYSQL_VERSION=8.0
-FROM mysql:${MYSQL_VERSION}
+FROM mysql:8.0
 
 MAINTAINER YongDe Pan <panyongde@gmail.com>
 
